@@ -22,7 +22,7 @@ TC03-Login_Screen_user_does_not_enter_email
 
 TC04-Login_screen_user_does_not_enter_email
     LoginAndNavigateToURL
-    ChangeToiFrame
+    ChangeToiFrame    id=iframe-05
     EmptyPassword
 
 TC05-Login_Screen_user_does_not_enter_email_or_password
