@@ -1,0 +1,17 @@
+//div[contains(text(),'Sign In')]
+//select[@id='FromCity']
+//select[@id='ToCity']
+//input[@id='goDate']
+//input[@id='returnDate']
+//select[@id='Class']
+//input[@type='checkbox']
+//input[@id='flight']
+//input[@id='flighthotel']
+
+//button[contains(text(),'Get Fare')]
+//div[@id='FareFirst']//tbody/tr[4]/td[4]
+//button[contains(text(),'Confirm Booking')]
+SUCCESS !! Your flight is booked
+
+
+//*[@id="myTableEco"]/tbody/tr[5]/td[4]

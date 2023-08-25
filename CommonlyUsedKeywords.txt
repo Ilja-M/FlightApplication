@@ -1,0 +1,18 @@
+*** Settings ***
+Library           SeleniumLibrary
+Library           ExcelLibrary
+
+*** Variables ***
+${username}       \
+${password}       \
+
+*** Keywords ***
+Login to flight application
+    Set Global Variable    ${username}
+    Set Global Variable    ${password}
+    Open Excel Document    C:/Users/ilja.miljuhin/Robot Ride Projects/Demo/DemoExcel1.xlsx    doc1
+    ${username}    ExcelLibrary.Read Excel Cell    2    4    Sheet1
+    ${password}    ExcelLibrary.Read Excel Cell    2    3    Sheet1
+    Input Text    xpath://input[@type='email']    ${username}
+    Input Text    xpath://input[@type='password']    ${password}
+    Click Element    xpath://div[@class='btn']
